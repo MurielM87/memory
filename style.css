@@ -1,0 +1,23 @@
+h1, #score {
+    text-align: center;
+}
+
+#memory {
+    background: black;
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat (4, 150px);
+    grid-gap: 10px;
+}
+
+img {
+    width: 100%;
+
+}
+
+span {
+    height: 190px;
+}
