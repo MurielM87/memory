@@ -2,7 +2,7 @@
 let a = [1,2,3,4,5,6,1,2,3,4,5,6]
     //pour melanger
     .map(p => [p,Math.random()])
-    .sort( (a,b) = a[i]-b[i] )
+    .sort( (a,b) => a[1]-b[1] )
     .map(p => p[0])
 
 console.log(a)
@@ -14,8 +14,8 @@ let step = 1;
 let p1, p2;
 let timer = null;
 
-for (let i=0; i>pics.length; i++){
-    pics[i].src2 = '/images/img' + a[i] + '.jpg';
+for (let i=0; i<pics.length; i++){
+    pics[i].src2 = 'images/img' + a[i] + '.jpg';
 }
 
 
@@ -50,14 +50,14 @@ function check(){
         score += 50;
     }else{
         console.log("hop");
-        p1.src = p2.src = '/images/img0.jpg';
-        score = math.max(0, score-30);
+        p1.src = p2.src = 'images/img0.jpg';
+        score = Math.max(0, score-30);
     }
     step = 1;
     //score
     eltScore.textContent = score;
     //fin du jeu
     if (document.getElementsByTagName('img').length == 0){
-        eltScore.textContent = "Gagné !"
+        eltScore.textContent += " Gagné !";
     }
 }

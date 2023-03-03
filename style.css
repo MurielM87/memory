@@ -1,4 +1,5 @@
-h1, #score {
+h1,
+p {
     text-align: center;
 }
 
@@ -9,15 +10,14 @@ h1, #score {
     margin: auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat (4, 150px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, 160px);
+    grid-gap: 20px;
 }
 
 img {
     width: 100%;
-
+    height: 190px;
 }
-
 span {
     height: 190px;
 }
